@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header.site-header {
+    background: linear-gradient(135deg, #4a90e2, #7b4397);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+nav {
+    background: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    list-style: none;
+    margin: 0;
+}
+
+.navigation li {
+    margin: 0 20px;
+}
+
+.navigation a {
+    font-family:cursive;
+    color: #4a90e2;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+.navigation a:hover {
+    background: #4a90e2;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #4a90e2;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #4a90e2;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p, ul {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* Education Section */
+.education-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.education {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+}
+
+.education h3 {
+    margin: 0;
+    font-size: 1.4em;
+    color: #7b4397;
+}
+
+/* Portfolio Section */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Section */
+#connect p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    margin-top: 30px;
+}
+
+/* Button Effect for Footer */
+footer p {
+    transition: color 0.3s;
+}
+
+footer p:hover {
+    color: #4a90e2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .education-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .navigation li {
+        margin-bottom: 10px;
+    }
+}
